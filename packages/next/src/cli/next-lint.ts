@@ -59,7 +59,7 @@ const eslintOptions = (
     options.reportUnusedDisableDirectivesSeverity || null,
   cache: options.cache,
   cacheLocation: options.cacheLocation || defaultCacheLocation,
-  cacheStrategy: options.cacheStrategy,
+  cacheStrategy: options.cacheStrategy || 'metadata',
   errorOnUnmatchedPattern: options.errorOnUnmatchedPattern ?? false,
 })
 
